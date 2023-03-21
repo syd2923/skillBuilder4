@@ -1,4 +1,3 @@
-
 /**
  * SkillBuilder5 is a class for completing the Skill
  * Builder 5 assignment in Java.
@@ -13,6 +12,10 @@ public class SkillBuilder4 {
 
     public static String findTYPattern(String s)
     {
-        // replace this line with your code
+        String i = s.toLowerCase();
+        int t = i.indexOf('t');
+        int y = i.indexOf('y');
+        if(y > t) return s.substring(t,y+1);
+        return "";
     }
 }
